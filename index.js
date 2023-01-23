@@ -10,13 +10,13 @@ try {
   const args = minimist(process.argv.slice(2))
 
   if (args['help'] || args['h']) {
-    throw "Expected usage: node index.js --dir=\"./working-dir\" --environment=\"./apiUrl\" --plan=\"./working-dir/plan.json\" --graph=\"./working-dir/graph.dot\" --token=\"collection-token\""
+    throw "Expected usage: node index.js --dir=\"./working-dir\" --environment=\"phoebus.lightlytics.com" --plan=\"./working-dir/plan.json\" --graph=\"./working-dir/graph.dot\" --token=\"collection-token\""
   }
 
   const requiredArgs = ['dir', 'environment', 'graph', 'token']
 
   if (Object.keys(args).length <= requiredArgs.length) {
-    throw `Expected at least ${requiredArgs.length} cli arguments. usage: node index.js --dir=\"./working-dir\" --environment=\"./apiUrl\" --plan=\"./working-dir/plan.json\" --graph=\"./working-dir/graph.dot\" --token=\"collection-token\"`
+    throw `Expected at least ${requiredArgs.length} cli arguments. usage: node index.js --dir=\"./working-dir\" --environment=\"phoebus.lightlytics.com" --plan=\"./working-dir/plan.json\" --graph=\"./working-dir/graph.dot\" --token=\"collection-token\"`
   }
 
   requiredArgs.forEach(requiredArg => {
