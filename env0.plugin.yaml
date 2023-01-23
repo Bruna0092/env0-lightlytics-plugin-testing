@@ -14,4 +14,4 @@ run:
     curl https://raw.githubusercontent.com/lightlytics/publisher-standalone/main/package.json --output package.json
     npm install
     curl https://raw.githubusercontent.com/Bruna0092/env0-lightlytics-plugin-testing/main/index.js --output index.js
-    node index.js --dir="${inputs.directory}" --hostname="${inputs.environment}" --plan="$ENV0_TF_PLAN_JSON" --graph="${inputs.directory}/graph.dot" --token="${inputs.token}" --poll
+    node index.js --dir="${inputs.directory}" --hostname="${inputs.environment}" --plan="$ENV0_TEMPLATE_DIR" --graph="${inputs.directory}/graph.dot" --token="${inputs.token}" --poll
