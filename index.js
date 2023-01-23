@@ -16,7 +16,7 @@ try {
   const requiredArgs = ['dir', 'hostname', 'graph', 'token']
 
   if (Object.keys(args).length <= requiredArgs.length) {
-    throw `Expected at least ${requiredArgs.length} cli arguments. usage: node index.js --dir=\"./working-dir\" --hostname=\"phoebus.lightlytics.com\" --plan=\"./working-dir/plan.json\" --graph=\"./working-dir/graph.dot\" --token=\"collection-token\"`
+    throw `Expected at least ${requiredArgs.length} cli arguments. usage: node index.js --dir=\"./working-dir\" --hostname=\"./apiUrl\" --plan=\"./working-dir/plan.json\" --graph=\"./working-dir/graph.dot\" --token=\"collection-token\"`
   }
 
   requiredArgs.forEach(requiredArg => {
