@@ -9,7 +9,7 @@ inputs:
     description: Additional Lightlytics flags
 run:
   exec: |
-    terraform graph -type=plan -plan=$ENV0_TF_PLAN_JSON> ./graph.dot
+    terraform graph -type=plan -plan=$ENV0_TF_PLAN_JSON > ./graph.dot
     echo "Downloading checker"
     curl https://raw.githubusercontent.com/lightlytics/publisher-standalone/main/package.json --output package.json
     npm install
